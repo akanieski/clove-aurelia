@@ -1,5 +1,5 @@
 import {inject} from 'aurelia-framework';
-import {AuthService} from 'paulvanbladel/aurelia-auth';
+import {AuthService} from 'spoonx/aurelia-auth';
 
 // Using Aurelia's dependency injection, we inject the AuthService
 // with the @inject decorator

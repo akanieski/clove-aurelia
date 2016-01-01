@@ -59,7 +59,7 @@
     "dependencies": {
       "aurelia-animator-css": "npm:aurelia-animator-css@^1.0.0-beta.1",
       "aurelia-bootstrapper": "npm:aurelia-bootstrapper@^1.0.0-beta.1",
-      "aurelia-fetch-client": "npm:aurelia-fetch-client@^1.0.0-beta.1",
+      "aurelia-fetch-client": "npm:aurelia-fetch-client@^1.0.0-beta.1.0.2",
       "aurelia-framework": "npm:aurelia-framework@^1.0.0-beta.1",
       "aurelia-history-browser": "npm:aurelia-history-browser@^1.0.0-beta.1",
       "aurelia-loader-default": "npm:aurelia-loader-default@^1.0.0-beta.1.0.1",
@@ -72,7 +72,7 @@
       "css": "github:systemjs/plugin-css@^0.1.20",
       "fetch": "github:github/fetch@^0.10.1",
       "font-awesome": "npm:font-awesome@^4.4.0",
-      "paulvanbladel/aurelia-auth": "github:paulvanbladel/aurelia-auth@^0.11.7",
+      "spoonx/aurelia-auth": "github:spoonx/aurelia-auth@^0.11.5",
       "text": "github:systemjs/plugin-text@^0.0.3"
     },
     "devDependencies": {

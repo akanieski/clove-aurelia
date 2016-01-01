@@ -1,7 +1,7 @@
 // client/src/login.js
 
 import {inject} from 'aurelia-framework';
-import {AuthService} from 'paulvanbladel/aurelia-auth';
+import {AuthService} from 'spoonx/aurelia-auth';
 
 // Using Aurelia's dependency injection, we inject the AuthService
 // with the @inject decorator
@@ -28,10 +28,10 @@ export class Login {
   login() {
     return this.auth.login(this.email, this.password)
     .then(response => {
-      console.log("Login response: " + response);
+        console.log("Login response: " + response);
     })
-    .catch(error => {
-      this.loginError = error.response;
+    .catch(response => {
+        this.loginError = response.content.error;
     });
   };
 }

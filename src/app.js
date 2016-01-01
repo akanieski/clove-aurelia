@@ -3,7 +3,7 @@ import 'bootstrap/css/bootstrap.css!';
 
 import {inject} from 'aurelia-framework';
 import {Router} from 'aurelia-router';
-import HttpClientConfig from 'paulvanbladel/aurelia-auth/app.httpClient.config';
+import HttpClientConfig from 'spoonx/aurelia-auth/app.httpClient.config';
 import AppRouterConfig from 'router-config';
 
 // Using Aurelia's dependency injection, we inject Aurelia's router,

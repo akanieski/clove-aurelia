@@ -1,4 +1,4 @@
-import {AuthorizeStep} from 'paulvanbladel/aurelia-auth';
+import {AuthorizeStep} from 'spoonx/aurelia-auth';
 import {inject} from 'aurelia-framework';
 import {Router} from 'aurelia-router';
 

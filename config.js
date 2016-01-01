@@ -19,6 +19,7 @@ System.config({
     "aurelia-fetch-client": "npm:aurelia-fetch-client@1.0.0-beta.1.0.2",
     "aurelia-framework": "npm:aurelia-framework@1.0.0-beta.1.0.7",
     "aurelia-history-browser": "npm:aurelia-history-browser@1.0.0-beta.1.0.1",
+    "aurelia-http-client": "npm:aurelia-http-client@1.0.0-beta.1",
     "aurelia-loader-default": "npm:aurelia-loader-default@1.0.0-beta.1.0.1",
     "aurelia-logging-console": "npm:aurelia-logging-console@1.0.0-beta.1",
     "aurelia-router": "npm:aurelia-router@1.0.0-beta.1",
@@ -32,7 +33,7 @@ System.config({
     "css": "github:systemjs/plugin-css@0.1.20",
     "fetch": "github:github/fetch@0.10.1",
     "font-awesome": "npm:font-awesome@4.5.0",
-    "paulvanbladel/aurelia-auth": "github:paulvanbladel/aurelia-auth@0.11.7",
+    "spoonx/aurelia-auth": "github:spoonx/aurelia-auth@0.11.5",
     "text": "github:systemjs/plugin-text@0.0.3",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
@@ -46,7 +47,7 @@ System.config({
     "github:jspm/nodelibs-util@0.1.0": {
       "util": "npm:util@0.10.3"
     },
-    "github:paulvanbladel/aurelia-auth@0.11.7": {
+    "github:spoonx/aurelia-auth@0.11.5": {
       "aurelia-fetch-client": "npm:aurelia-fetch-client@1.0.0-beta.1.0.2",
       "aurelia-framework": "npm:aurelia-framework@1.0.0-beta.1.0.7",
       "aurelia-http-client": "npm:aurelia-http-client@1.0.0-beta.1",

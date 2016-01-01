@@ -5,16 +5,18 @@ import {inject} from 'aurelia-framework';
 import {Router} from 'aurelia-router';
 import HttpClientConfig from 'spoonx/aurelia-auth/app.httpClient.config';
 import AppRouterConfig from 'router-config';
+import {AppService} from './appService'
 
 // Using Aurelia's dependency injection, we inject Aurelia's router,
 // the paulvanbladel/aurelia-auth http client config, and our own router config
 // with the @inject decorator.
-@inject(Router, HttpClientConfig, AppRouterConfig)
+@inject(Router, HttpClientConfig, AppRouterConfig, AppService)
 
 export class App {
 
-  constructor(router, httpClientConfig, appRouterConfig) {
+  constructor(router, httpClientConfig, appRouterConfig, appService) {
 
+    this.appService = appService;
     this.router = router;
 
     // Client configuration provided by the aureliauth plugin
@@ -23,6 +25,7 @@ export class App {
     // The application's configuration, including the
     // route definitions that we've declared in router-config.js
     this.appRouterConfig = appRouterConfig;
+    
   };
 
   activate() {

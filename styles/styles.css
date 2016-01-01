@@ -6,6 +6,77 @@ body > .container {
   margin-top: 65px;
 }
 
+/** SIDE BAR **/
+div#side-bar {
+    padding-bottom: 10px;
+    background: #798E6C;
+    border-right: 1px solid #C1C1C1;
+    height: 100%;
+    position: absolute;
+    width: 75px;
+    color: #EFFFED;
+    z-index: 10001;
+}
+div#side-bar ul {
+    list-style: none;
+    padding-left: 0px;
+    text-align: center;
+    width: 100%;
+}
+div#side-bar ul li {
+    font-size: 1em;
+}
+div#side-bar ul li i {
+    font-size: 1.5em;
+}
+div#side-bar ul li.header i {
+    font-size: 2em;
+}
+div#side-bar ul#bottom-aligned {
+    position: absolute;
+    bottom: 0px;
+}
+div#side-bar li > a {
+    color: #EFFFED;
+}
+div#side-bar li .brand {
+    display:block;
+    height: 50px;
+    padding: 10px;
+}
+div#side-bar.open li .brand {
+    display:block;
+    padding: 50px;
+    padding-top: 10px;
+}
+div#side-bar li .brand img {
+    width: 100%;
+}
+div#side-bar li .brand span {
+    left: 50px;
+}
+
+div#main-content {margin-left: 75px;}
+
+div#side-bar.open {
+    width: 250px;
+}
+
+div#main-content.open {
+    margin-left: 250px;
+}
+div#main-content.hidden-sidebar {
+    margin-left: 0px;
+}
+/** END SIDE BAR **/
+
+
+
+
+
+
+
+
 .splash {
   text-align: center;
   margin: 10% 0 0 0;

@@ -1,6 +1,6 @@
 import {bindable} from 'aurelia-framework';
 import {inject} from 'aurelia-framework';
-import {AppService} from './appService';
+import {AppService} from '../services/appService';
 
 @inject(AppService)
 export class NavBar {

@@ -1,0 +1,8 @@
+<template>
+    <div class="container">
+        <ul class="list-group">
+            <li class="list-group-item active"><b>Select Domain</b></li>
+            <li class="list-group-item" repeat.for="userAppDomain of appService.profile.userAppDomains" click.trigger="select(userAppDomain.appDomain)">${userAppDomain.appDomain.name}</li>
+        </ul>
+    </div>
+</template>

@@ -71,7 +71,7 @@
       "bootstrap": "github:twbs/bootstrap@^3.3.5",
       "css": "github:systemjs/plugin-css@^0.1.20",
       "fetch": "github:github/fetch@^0.10.1",
-      "font-awesome": "npm:font-awesome@^4.4.0",
+      "font-awesome": "npm:font-awesome@^4.5.0",
       "spoonx/aurelia-auth": "github:spoonx/aurelia-auth@^0.11.5",
       "text": "github:systemjs/plugin-text@^0.0.3"
     },

@@ -26,12 +26,12 @@ export default class {
       // such as which they are accessible at, which module they use, and whether
       // they should be placed in the navigation bar
       config.map([
-          { route: ['','welcome'], name: 'welcome', moduleId: './welcome', nav: true, title:'Welcome' },
-          // The secret-quote route is the only one that the user needs to be logged in to see,  so we set auth: true
-          { route: 'users', name: 'users', moduleId: './users', nav: true, title:'Users', auth: true },
-          { route: 'signup', name: 'signup', moduleId: './signup', nav: false, title:'Signup', authRoute: true },
-          { route: 'login', name: 'login', moduleId: './login', nav: false, title:'Login', authRoute: true },
-          { route: 'logout', name: 'logout', moduleId: './logout', nav: false, title:'Logout', authRoute: true }
+          { route: ['','welcome'],  name: 'welcome',        moduleId: './welcome',              nav: true,  title:'Welcome' },
+          { route: 'users',         name: 'users',          moduleId: './users',                nav: true,  title:'Users',          auth: true },
+          { route: 'domainSelect',  name: 'domainSelect',   moduleId: './system/domain-select', nav: false, title:'Domain Select',  auth: true },
+          { route: 'signup',        name: 'signup',         moduleId: './system/signup',        nav: false, title:'Signup',         authRoute: true },
+          { route: 'login',         name: 'login',          moduleId: './system/login',         nav: false, title:'Login',          authRoute: true },
+          { route: 'logout',        name: 'logout',         moduleId: './system/logout',        nav: false, title:'Logout',         authRoute: true }
         ]);
       };
 

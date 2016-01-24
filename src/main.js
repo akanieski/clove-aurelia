@@ -1,4 +1,4 @@
-import config from './site-config';
+import config from './system/site-config';
 
 export function configure(aurelia) {
 

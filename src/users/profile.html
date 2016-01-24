@@ -1,0 +1,115 @@
+<template>
+    <require from="../attributes/dirty-bind"></require>
+    <div class="container">
+        <section class="">
+            <div class="x_panel">
+                <div class="x_title">
+                    <h4>User Profile</h4>
+                    <ul class="nav navbar-right panel_toolbox">
+                        <!--
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Settings 1</a>
+                                </li>
+                                <li><a href="#">Settings 2</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a class="close-link"><i class="fa fa-close"></i></a>
+                        </li>
+                        -->
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+                    <br>
+                    <form dirty.bind="formDirty" id="demo-form2" data-parsley-validate="" class="form-horizontal form-label-left" novalidate="">
+
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">First Name <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <input type="text" value.bind="profile.firstName" id="first-name" required="required" class="form-control col-md-7 col-xs-12" data-parsley-id="3855"><ul class="parsley-errors-list" id="parsley-id-3855"></ul>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Last Name <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <input type="text" value.bind="profile.lastName" id="last-name" name="last-name" required="required" class="form-control col-md-7 col-xs-12" data-parsley-id="8606"><ul class="parsley-errors-list" id="parsley-id-8606"></ul>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Email <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <input type="text" value.bind="profile.email" id="emai" name="email" required="required" class="form-control col-md-7 col-xs-12" data-parsley-id="8606"><ul class="parsley-errors-list" id="parsley-id-8606"></ul>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+        </section>
+        
+        
+        
+        <section>
+            <div class="x_panel">
+                <div class="x_title">
+                    <h4>Change Password</h4>
+                    <ul class="nav navbar-right panel_toolbox">
+                        <!--
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Settings 1</a>
+                                </li>
+                                <li><a href="#">Settings 2</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a class="close-link"><i class="fa fa-close"></i></a>
+                        </li>
+                        -->
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+                    <br>
+                    <form dirty.bind="formDirty" id="demo-form2" data-parsley-validate="" class="form-horizontal form-label-left" novalidate="">
+
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="password">Password<span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <input type="password" value.bind="profile.password" id="password" required="required" class="form-control col-md-7 col-xs-12" data-parsley-id="3855"><ul class="parsley-errors-list" id="parsley-id-3855"></ul>
+                            </div>
+                        </div>
+                        <div class="form-group ${errors.password2 ? 'has-error' : ''}">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="password2">Confirm Password<span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <input type="password" value.bind="profile.password2" id="password2" name="last-name" required="required" class="form-control col-md-7 col-xs-12" data-parsley-id="8606">
+                                <label class="error-label">${errors.password2}</label>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+        </section>
+    </div>
+    
+    
+    <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+        <div class="navbar-collapse">
+            <button type="submit" class="btn btn-danger pull-left" disabled>Delete User</button>
+            <button type="submit" class="btn btn-success pull-right" disabled.bind="!saveEnabled" click.trigger="save()">Save</button>
+            <button type="submit" class="btn btn-primary pull-right">Cancel</button>
+        </div>
+    </nav>
+</template>

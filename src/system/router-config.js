@@ -28,6 +28,7 @@ export default class {
       config.map([
           { route: ['','welcome'],  name: 'welcome',        moduleId: './welcome',              nav: true,  title:'Welcome' },
           { route: 'users',         name: 'users',          moduleId: './users',                nav: true,  title:'Users',          auth: true },
+          { route: 'profile',       name: 'profile',        moduleId: './users/profile',              nav: true,  title:'User Profile',   auth: true },
           { route: 'domainSelect',  name: 'domainSelect',   moduleId: './system/domain-select', nav: false, title:'Domain Select',  auth: true },
           { route: 'signup',        name: 'signup',         moduleId: './system/signup',        nav: false, title:'Signup',         authRoute: true },
           { route: 'login',         name: 'login',          moduleId: './system/login',         nav: false, title:'Login',          authRoute: true },

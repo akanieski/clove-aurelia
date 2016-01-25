@@ -14,14 +14,7 @@ System.config({
   },
   bundles: {
     "app-build": [
-      "app",
-      "app.html!github:systemjs/plugin-text@0.0.3",
-      "config",
-      "main",
-      "users",
-      "users.html!github:systemjs/plugin-text@0.0.3",
-      "welcome",
-      "welcome.html!github:systemjs/plugin-text@0.0.3"
+      "app.html!github:systemjs/plugin-text@0.0.3"
     ],
     "aurelia": [
       "github:components/jquery@2.1.4",

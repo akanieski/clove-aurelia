@@ -1,16 +1,18 @@
-var appRoot = 'src/';
-var outputRoot = 'dist/';
-var exportSrvRoot = 'export/';
+var src        = 'client-src/';
+var devOutput  = 'wwwdev/';
+var prodOutput = 'wwwprod/';
 
-module.exports = {
-  root: appRoot,
-  source: appRoot + '**/*.js',
-  html: appRoot + '**/*.html',
-  css: appRoot + '**/*.css',
-  style: 'styles/**/*.css',
-  output: outputRoot,
-  exportSrv: exportSrvRoot,
-  doc: './doc',
-  e2eSpecsSrc: 'test/e2e/src/*.js',
-  e2eSpecsDist: 'test/e2e/dist/'
+module.exports = 
+{
+    js:        [src + '**/*.js'],   //Client scripts
+    
+    html:      [src + '**/*.html'],
+    style:     [src + '**/*.less'],  
+    img:       [src + '**/*.png', src + '**/*.jpg', src + '**/*.svg', src + '**/*.ico'],
+    
+    devClean:  ['wwwdev/**/*', '!wwwdev/jspm_packages', '!wwwdev/jspm_packages/**/*', '!wwwdev/config.js', '!wwwdev/aurelia.js'],
+    prodClean: [prodOutput + '**/*'],
+    
+    devOutput:   devOutput,
+    prodOutput:  prodOutput
 };

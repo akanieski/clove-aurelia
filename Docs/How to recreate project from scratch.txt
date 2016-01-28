@@ -1,0 +1,25 @@
+If you'd like to recreate this sample project from scratch yourself here are the steps:
+
+1) Make sure you have Node.js installed
+2) Enter your project's directory
+
+3) npm init                                           //Create package.json file (default values are fine)
+4) npm install jspm@0.16.19 -g                        //Install jspm globally on your system
+5) npm install --save-dev --save-exact jspm@0.16.19 gulp-babel@5.1.0  //Install JSPM/Babel with specific versions
+
+
+//Bunch of other node packages I reccomend installing for development
+6) npm install --save-dev gulp del browser-sync gulp-changed gulp-concat gulp-less less-plugin-autoprefix gulp-cssnano gulp-notify gulp-plumber gulp-sourcemaps require-dir run-sequence gulp-htmlmin
+
+//Setup JSPM
+7) jspm init                                           
+	Would you like jspm to prefix the jspm package.json properties under jspm? [yes]
+	Enter server baseURL (public folder path) [./wwwdev]
+	Enter jspm packages folder [wwwdev\jspm_packages]
+	Enter config file path [wwwdev\config.js]
+	Configuration file wwwdev\config.js doesn't exist, create it? [yes]
+	Enter client baseURL (public folder URL) [/]
+	Do you wish to use a transpiler? [no]
+
+//Use JSPM to install aurelia libs, core-js, and text plugin (for html bundling)
+8) jspm install aurelia-framework aurelia-bootstrapper aurelia-loader-default aurelia-templating-resources aurelia-event-aggregator aurelia-templating-router aurelia-history-browser aurelia-logging-console aurelia-templating-binding core-js text
